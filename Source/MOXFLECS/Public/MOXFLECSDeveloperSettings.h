@@ -4,20 +4,20 @@
 
 #include "CoreMinimal.h"
 #include "Engine/DeveloperSettings.h"
-#include "MegaFLECSDeveloperSettings.generated.h"
+#include "MOXFLECSDeveloperSettings.generated.h"
 
 class UECSModule;
 
 /**
- * 
+ *
  */
 UCLASS(config = Game, defaultconfig)
-class MEGAFLECS_API UMegaFLECSDeveloperSettings : public UDeveloperSettings
+class MOXFLECS_API UMO–XFLECSDeveloperSettings : public UDeveloperSettings
 {
 	GENERATED_BODY()
 public:
-	UMegaFLECSDeveloperSettings(const FObjectInitializer& ObjectInitializer);
-	
+	UMOXFLECSDeveloperSettings(const FObjectInitializer& ObjectInitializer);
+
 	UPROPERTY(EditDefaultsOnly, config)
 	TArray<TSubclassOf<UECSModule>> ECSModules;
 

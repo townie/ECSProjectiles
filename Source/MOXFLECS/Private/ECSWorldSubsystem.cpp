@@ -3,8 +3,8 @@
 
 #include "ECSWorldSubsystem.h"
 #include "flecs.h"
-#include "MegaFLECSDeveloperSettings.h"
-#include "MegaFLECSTypes.h"
+#include "MOXFLECSDeveloperSettings.h"
+#include "MOXFLECSTypes.h"
 #include "ECSModule.h"
 
 UECSWorldSubsystem::UECSWorldSubsystem()
@@ -27,7 +27,7 @@ void UECSWorldSubsystem::Initialize(FSubsystemCollectionBase& Collection)
 	e.set< FECSScriptStructComponent>({ FECSScriptStructComponent::StaticStruct() });
 
 
-	const UMegaFLECSDeveloperSettings* DevSettings = GetDefault<UMegaFLECSDeveloperSettings>();
+	const UMOXFLECSDeveloperSettings* DevSettings = GetDefault<UMOXFLECSDeveloperSettings>();
 
 	for (auto& Modules : DevSettings->ECSModules)
 	{

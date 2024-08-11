@@ -12,10 +12,10 @@ namespace flecs
 }
 
 /**
- * 
+ *
  */
 UCLASS()
-class MEGAFLECS_API UECSWorldSubsystem : public UWorldSubsystem
+class MOXFLECS_API UECSWorldSubsystem : public UWorldSubsystem
 {
 	GENERATED_BODY()
 public:
@@ -26,7 +26,7 @@ public:
 
 	TSharedPtr<flecs::world> GetEcsWorld() const { return ECSWorld; }
 
-protected:	
+protected:
 	FTickerDelegate OnTickDelegate;
 	FDelegateHandle OnTickHandle;
 

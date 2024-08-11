@@ -2,16 +2,16 @@
 
 using UnrealBuildTool;
 
-public class MegaFLECS : ModuleRules
+public class MOXFLECS : ModuleRules
 {
-    public MegaFLECS(ReadOnlyTargetRules Target) : base(Target)
+    public MOXFLECS(ReadOnlyTargetRules Target) : base(Target)
 	{
         PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
-		PrivatePCHHeaderFile = "Public/MegaFLECS.h";
+		PrivatePCHHeaderFile = "Public/MOXFLECS.h";
 		CppStandard = CppStandardVersion.Cpp17;
 
         PublicDependencyModuleNames.AddRange(new string[] {
-            "Core",
+             "Core",
              "CoreUObject",
              "Engine",
              "DeveloperSettings",
@@ -20,7 +20,7 @@ public class MegaFLECS : ModuleRules
         PublicIncludePaths.AddRange(new string[] { "FlecsLibrary/Public" });
         PrivateIncludePaths.AddRange(new string[] { "FlecsLibrary/Private" });
 
-        AppendStringToPublicDefinition("flecs_EXPORTS", "0");     
+        AppendStringToPublicDefinition("flecs_EXPORTS", "0");
     }
 
 }

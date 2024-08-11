@@ -3,11 +3,11 @@
 #pragma once
 
 #include "flecs.h"
-#include "MegaFLECSTypes.generated.h"
+#include "MOXFLECSTypes.generated.h"
 
 
 USTRUCT(BlueprintType)
-struct MEGAFLECS_API FECSEntityHandle
+struct MOXFLECS_API FECSEntityHandle
 {
 	GENERATED_BODY()
 public:
@@ -25,7 +25,7 @@ public:
 };
 
 USTRUCT()
-struct MEGAFLECS_API FECSScriptStructComponent
+struct MOXFLECS_API FECSScriptStructComponent
 {
 	GENERATED_BODY()
 public:

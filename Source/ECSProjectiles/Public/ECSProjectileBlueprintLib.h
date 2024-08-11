@@ -13,7 +13,7 @@
 
 
 /**
- * 
+ *
  */
 UCLASS()
 class ECSPROJECTILES_API UECSProjectileBlueprintLib : public UBlueprintFunctionLibrary
@@ -21,9 +21,9 @@ class ECSPROJECTILES_API UECSProjectileBlueprintLib : public UBlueprintFunctionL
 	GENERATED_BODY()
 public:
 	UFUNCTION(BlueprintCallable, Category = "ECSBullet", meta = (WorldContext = "WorldContextObject"))
-
 	FECSEntityHandle SpawnECSBullet(UObject* WorldContextObject, FTransform SpawnTransform, float Velocity,
 	                                TSubclassOf<AActor> ProjectileActor);
+
 	UFUNCTION(BlueprintCallable, Category = "ECSBullet", meta = (WorldContext = "WorldContextObject"))
 	static FECSEntityHandle SpawnECSBulletNiagaraGrouped(UObject* WorldContextObject, FECSGASEffectPayload EffectPayload, FECSEntityHandle NiagaraProjectilesEntityId, FECSEntityHandle
 	                                                     NiagaraHitsEntityId, FTransform

@@ -5,7 +5,7 @@
 #include "UObject/NoExportTypes.h"
 #include "CoreMinimal.h"
 #include "flecs.h"
-#include "MegaFLECSTypes.h"
+#include "MOXFLECSTypes.h"
 #include "ECSModule.generated.h"
 
 namespace flecs
@@ -15,10 +15,10 @@ namespace flecs
 
 
 /**
- * 
+ *
  */
 UCLASS()
-class MEGAFLECS_API UECSModule : public UObject
+class MOXFLECS_API UECSModule : public UObject
 {
 	GENERATED_BODY()
 public:
@@ -30,8 +30,8 @@ public:
 
 	virtual void FinishInitialize(TSharedPtr<flecs::world> World);
 
-	
-	
+
+
 
 	template<typename T>
 	typename TEnableIf<TProvidesStaticStruct<T>::Value, flecs::entity >::Type
@@ -50,5 +50,5 @@ public:
 		return flecs::component<T>(*World.Get(), Name);
 	}
 
-	
+
 };

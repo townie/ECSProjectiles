@@ -11,7 +11,7 @@ After enabling the plugin go to project settings and take note of the new MegaFL
 **Important**: The projectile subsystem needs to have a AECSProjectilesNiagaraManagerBP set in the ECSProjectileDeveloperSettings for it to spawn in the world!
 This is what sets the AECSProjectilesNiagaraManagerBP actor to get spawned by the subsystem and the default Niagara Entity ID stuff. 
 
-Now you should be able to call the blueprint library function "SpawnECSBulletNiagaraGrouped" and it should spawn a bullet with the default setup at the given location. 
+Now you should be able to call the blueprint library function "SpawnECSBulletNiagaraGrouped" and it should spawn a bullet with the default setup at the given locatget ion. 
 There is an example in TestBulletSpammer.uasset unless I forgot to hook things up.
 
 

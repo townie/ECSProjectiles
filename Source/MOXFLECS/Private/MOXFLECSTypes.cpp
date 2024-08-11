@@ -1,6 +1,6 @@
 // Copyright 2021 EmpiresTeam.  Licensed under MIT.  See LICENSE.
 
-#include "MegaFLECSTypes.h"
+#include "MOXFLECSTypes.h"
 #include "flecs.h"
 
 FECSEntityHandle::FECSEntityHandle(flecs::entity entity)

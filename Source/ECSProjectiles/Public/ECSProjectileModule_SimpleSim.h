@@ -66,14 +66,14 @@ struct FECSGASEffectPayload
 	FGameplayEventData OnHitEventData;
 };
 /**
- * 
+ *
  */
 UCLASS()
 class ECSPROJECTILES_API UECSProjectileModule_SimpleSim : public UECSModule
 {
 	GENERATED_BODY()
 public:
-	
+
 
 	virtual void InitializeComponents(TSharedPtr<flecs::world> World);
 

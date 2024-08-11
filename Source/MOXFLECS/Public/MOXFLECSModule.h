@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 #include "Modules/ModuleManager.h"
 
-class MegaFLECSModule : public IModuleInterface
+class MOXFLECSModule : public IModuleInterface
 {
 public:
 
